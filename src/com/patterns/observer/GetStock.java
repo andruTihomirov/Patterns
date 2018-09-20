@@ -29,13 +29,13 @@ public class GetStock implements Runnable {
             double randNum = (Math.random() * (0.6)) - .03;
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
             price = Double.valueOf(decimalFormat.format(price + randNum).replace(",", "."));
-            if (stock == "IBM") {
+            if (stock.equals("IBM")) {
                 ((StockGrabber) stockGrabber).setIbmPrice(price);
             }
-            if (stock == "APPLE") {
+            if (stock.equals("APPLE")) {
                 ((StockGrabber) stockGrabber).setIbmPrice(price);
             }
-            if (stock == "GOOGLE") {
+            if (stock.equals("GOOGLE")) {
                 ((StockGrabber) stockGrabber).setIbmPrice(price);
             }
 

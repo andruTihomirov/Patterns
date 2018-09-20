@@ -16,7 +16,7 @@ public class Main {
         stockGrabber.setApplePrice(677.60);
         stockGrabber.setGooglePrice(676.40);
 
-        stockGrabber.unregister(observer1);
+        stockGrabber.unregister(new StockObserver(stockGrabber));
 
         stockGrabber.setIbmPrice(197.00);
         stockGrabber.setApplePrice(677.60);

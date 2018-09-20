@@ -19,7 +19,6 @@ public class StockGrabber implements Subject {
         observers.add(observer);
     }
 
-    // TODO: if we pass nonexistent observer, the method throw an exception
     @Override
     public void unregister(Observer observer) {
         int observerIndex = observers.indexOf(observer);
