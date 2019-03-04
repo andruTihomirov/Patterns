@@ -3,7 +3,7 @@ package com.patterns.strategy;
 /**
  * @author atsikhamirau on 20.09.2018
  */
-public class Animal {
+public abstract class Animal {
 
     private Flys flyingType;
 
